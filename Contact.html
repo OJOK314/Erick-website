@@ -11,16 +11,14 @@
       0% { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
     }
-
     .animate-marquee {
       display: inline-block;
       animation: marquee 10s linear infinite;
       white-space: nowrap;
     }
 
-    /* Add padding to prevent content from hiding under fixed navbar */
     main {
-      padding-top: 100px;
+      padding-top: 90px;
     }
   </style>
 </head>
@@ -33,16 +31,14 @@
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <!-- Logo -->
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="./Logoimage.jpg" class="h-14 w-14 rounded-full object-cove" alt="Logo" />
-         
-           <span 
-        class="self-center text-lg  whitespace-nowrap text-white" 
-        style="font-family: Georgia, 'Times New Roman', Times, serif;">
-          WESTMEGA BARBERSHOP
-      </span>
+          <img src="./Logoimage.jpg" class="h-12 w-12 rounded-full object-cover" alt="Logo" />
+          <span class="self-center text-lg text-white  tracking-wide"
+            style="font-family: Georgia, 'Times New Roman', Times, serif;">
+            WESTMEGA BARBERSHOP
+          </span>
         </a>
 
-        <!-- Hamburger Button -->
+        <!-- Hamburger -->
         <button data-collapse-toggle="navbar-default" type="button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-purple-600 focus:outline-none"
           aria-controls="navbar-default" aria-expanded="false">
@@ -53,13 +49,12 @@
           </svg>
         </button>
 
-        <!-- Menu Items -->
+        <!-- Menu -->
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul
-            class="font-medium flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-purple-700 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+          <ul class="font-medium flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-purple-700 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
             <li><a href="./index.html" class="block py-2 px-3 text-white hover:text-yellow-300">Home</a></li>
             <li><a href="./About.html" class="block py-2 px-3 text-white hover:text-yellow-300">About</a></li>
-            <li><a href="./Contact.html" class="block py-2 px-3 text-white hover:text-yellow-300"> Contact</a></li>
+            <li><a href="./Contact.html" class="block py-2 px-3 text-white hover:text-yellow-300">Contact</a></li>
             <li><a href="./Services.html" class="block py-2 px-3 text-white hover:text-yellow-300">Services</a></li>
           </ul>
         </div>
@@ -69,24 +64,14 @@
 
   <!-- ======== MAIN CONTENT ======== -->
   <main>
-    <!-- Carousel -->
-   <div class="flex justify-center flex-wrap gap-4 mx-6 my-6">
-  <img 
-    src="photo3.jpg" 
-    alt="photo3" 
-    class="w-4/5 sm:w-2/5 lg:w-1/4 rounded-lg shadow-md"
-  >
 
-  <img 
-    src="photo4.jpg" 
-    alt="photo4" 
-    class="w-4/5 sm:w-2/5 lg:w-1/4 rounded-lg shadow-md"
-  >
-</div>
-
-
-
-    
+    <!-- Carousel Images -->
+    <div class="flex flex-wrap justify-center gap-6 px-4 py-6">
+      <img src="photo3.jpg" alt="photo3"
+        class="w-full sm:w-1/2 lg:w-1/4 rounded-lg shadow-md object-cover" />
+      <img src="photo4.jpg" alt="photo4"
+        class="w-full sm:w-1/2 lg:w-1/4 rounded-lg shadow-md object-cover" />
+    </div>
 
     <!-- About Section -->
     <section class="p-6 text-gray-900 bg-blue-100">
@@ -97,101 +82,71 @@
           Experience professional fades, sharp beard trims, and relaxing shaves from expert barbers who care about your look.
         </p>
 
-      
-        <div>
-            <p>
-
-<h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large; text-decoration: underline; color: rgb(238, 167, 15);">Client's Testimonials</h2>
-                         
-                Check out some of our client's testimonials from the previous saving, facecrabing and nails cutting.
-                We hope these get you even more excited to come and save with us at your free time
-
-              
-            </p>
+        <div class="mt-8">
+          <h2 class="text-2xl sm:text-3xl font-semibold text-yellow-500 underline mb-2">Client's Testimonials</h2>
+          <p class="text-gray-700">
+            Check out some of our client’s testimonials from previous shaves, facials, and nail treatments.
+            We hope these get you even more excited to visit us!
+          </p>
         </div>
       </div>
     </section>
 
-  
+    <!-- Videos -->
+    <section class="my-8 px-4 flex flex-wrap justify-center gap-4">
+      <video class="w-full sm:w-1/2 lg:w-1/4 rounded-lg shadow-md" controls>
+        <source src="/docs/videos/flowbite.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video class="w-full sm:w-1/2 lg:w-1/4 rounded-lg shadow-md" controls>
+        <source src="/docs/videos/flowbite.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video class="w-full sm:w-1/2 lg:w-1/4 rounded-lg shadow-md" controls>
+        <source src="/docs/videos/flowbite.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video class="w-full sm:w-1/2 lg:w-1/4 rounded-lg shadow-md" controls>
+        <source src="/docs/videos/flowbite.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
 
-
-    <!------- video section-------------->
-
-    
-<div style="display: flex; justify-content: center; gap: 4px; margin-left: 6px; margin-left: 6px;">
-    <video class="w-96" controls>
-  <source src="/docs/videos/flowbite.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-<video class="w-96" controls>
-  <source src="/docs/videos/flowbite.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-</div>
-
-<div style="display: flex; justify-content: center; gap: 4px; margin-top: 4px;">
-    
-<video class="w-96" controls>
-  <source src="/docs/videos/flowbite.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-<video class="w-96" controls>
-  <source src="/docs/videos/flowbite.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-</div>
-
-<!---------Map section--------------->
-<div style="
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  
-">
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3232.7500526285808!2d32.30420243891618!3d2.7702276556466923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwNDYnMTIuNiJOIDMywrAxOCcxNy44IkU!5e1!3m2!1sen!2sug!4v1761311624338!5m2!1sen!2sug" 
-    width="600" 
-    height="450" 
-    style="border:0; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</div>
-
-
+    <!-- Map -->
+    <section class="px-4 my-10 flex justify-center">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3232.7500526285808!2d32.30420243891618!3d2.7702276556466923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwNDYnMTIuNiJOIDMywrAxOCcxNy44IkU!5e1!3m2!1sen!2sug!4v1761311624338!5m2!1sen!2sug"
+        class="w-full max-w-3xl h-80 rounded-lg shadow-md border-0"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
   </main>
 
   <!-- ======== FOOTER ======== -->
   <footer class="bg-gray-900 text-gray-400 mt-10">
-    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <div class="mx-auto w-full max-w-screen-xl p-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
           <a href="#" class="flex items-center">
-            <img src="./logo.jpg" class="h-14 me-3 rounded-full" alt="Logo" />
+            <img src="./logo.jpg" class="h-12 me-3 rounded-full" alt="Logo" />
             <span class="self-center text-lg font-semibold text-white">Westmega Barbershop</span>
           </a>
         </div>
 
         <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-white uppercase">Location</h2>
-            <ul class="font-medium space-y-2">
+            <h2 class="mb-4 text-sm font-semibold text-white uppercase">Location</h2>
+            <ul class="space-y-2">
               <li><a href="#" class="hover:text-white">Acholi Lane Road</a></li>
               <li><a href="#" class="hover:text-white">Plot 1</a></li>
               <li><a href="#" class="hover:text-white">Laroo-Pece Division</a></li>
               <li><a href="#" class="hover:text-white">Gulu City</a></li>
             </ul>
           </div>
-
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-white uppercase">Follow us</h2>
-            <ul class="font-medium space-y-2">
+            <h2 class="mb-4 text-sm font-semibold text-white uppercase">Follow us</h2>
+            <ul class="space-y-2">
               <li><a href="#" class="hover:text-white">WhatsApp</a></li>
               <li><a href="#" class="hover:text-white">X</a></li>
               <li><a href="#" class="hover:text-white">Facebook</a></li>
@@ -202,10 +157,9 @@
       </div>
 
       <hr class="my-6 border-gray-700" />
-
-      <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center">© 2025 Westmega Barbershop. All Rights Reserved.</span>
-        <div class="flex mt-4 sm:mt-0 space-x-5">
+      <div class="sm:flex sm:items-center sm:justify-between text-center sm:text-left">
+        <span class="text-sm text-gray-500">© 2025 Westmega Barbershop. All Rights Reserved.</span>
+        <div class="flex justify-center sm:justify-end mt-4 sm:mt-0 space-x-4">
           <a href="#" class="text-gray-400 hover:text-white"><ion-icon name="logo-facebook"></ion-icon></a>
           <a href="#" class="text-gray-400 hover:text-white"><ion-icon name="logo-twitter"></ion-icon></a>
           <a href="#" class="text-gray-400 hover:text-white"><ion-icon name="logo-github"></ion-icon></a>
@@ -215,9 +169,13 @@
   </footer>
 
   <!-- ======== SCRIPTS ======== -->
+  <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com -->
+
+    <!-- ======== SCRIPTS ======== -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-
 </body>
 </html>
+
